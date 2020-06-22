@@ -32,6 +32,31 @@ export class AppComponent implements OnInit {
       url: "/actionsheet",
       icon: "construct",
     },
+    {
+      title: "Badges",
+      url: "/badge",
+      icon: "construct",
+    },
+    {
+      title: "Cards",
+      url: "/card",
+      icon: "construct",
+    },
+    {
+      title: "CheckBox",
+      url: "/checkbox",
+      icon: "construct",
+    },
+    {
+      title: "Chip",
+      url: "/chip",
+      icon: "construct",
+    },
+    {
+      title: "Content",
+      url: "/content",
+      icon: "construct",
+    },
   ];
   public labels = ["Family", "Friends", "Notes", "Work", "Travel", "Reminders"];
 
