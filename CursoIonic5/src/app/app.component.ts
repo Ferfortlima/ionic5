@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
       icon: "construct",
     },
     {
-      title: "Action-Sheet",
+      title: "ActionSheet",
       url: "/actionsheet",
       icon: "construct",
     },
@@ -65,6 +65,66 @@ export class AppComponent implements OnInit {
     {
       title: "DateTime",
       url: "/datetime",
+      icon: "construct",
+    },
+    {
+      title: "FAB",
+      url: "/fab",
+      icon: "construct",
+    },
+    {
+      title: "Grid",
+      url: "/grid",
+      icon: "construct",
+    },
+    {
+      title: "Infinite Scroll",
+      url: "/infinitescroll",
+      icon: "construct",
+    },
+    {
+      title: "Input",
+      url: "/input",
+      icon: "construct",
+    },
+    {
+      title: "List",
+      url: "/list",
+      icon: "construct",
+    },
+    {
+      title: "Progress Bar",
+      url: "/progressbar",
+      icon: "construct",
+    },
+    {
+      title: "Refresher",
+      url: "/refresher",
+      icon: "construct",
+    },
+    {
+      title: "Reorder",
+      url: "/reorder",
+      icon: "construct",
+    },
+    {
+      title: "Select",
+      url: "/select",
+      icon: "construct",
+    },
+    {
+      title: "Toggle",
+      url: "/toggle",
+      icon: "construct",
+    },
+    {
+      title: "SearchBar",
+      url: "/searchbar",
+      icon: "construct",
+    },
+    {
+      title: "Segment",
+      url: "/segment",
       icon: "construct",
     },
   ];

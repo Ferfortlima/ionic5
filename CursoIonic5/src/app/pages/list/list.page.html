@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Input</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3>Lista com texto</h3>
+  <ion-list>
+    <ion-item><ion-label>Abacate</ion-label></ion-item>
+    <ion-item><ion-label>Maçã</ion-label></ion-item>
+    <ion-item><ion-label>Goiaba</ion-label></ion-item>
+  </ion-list>
+
+  <h3>Lista Form</h3>
+  <ion-list>
+    <ion-item><ion-label>Input</ion-label> <ion-input></ion-input></ion-item>
+    <ion-item
+      ><ion-label>Chackbox</ion-label> <ion-checkbox slot="start"></ion-checkbox
+    ></ion-item>
+    <ion-item
+      ><ion-label>Radio</ion-label> <ion-radio slot="start"></ion-radio
+    ></ion-item>
+    <ion-item
+      ><ion-label>Toggle</ion-label> <ion-toggle slot="end"></ion-toggle
+    ></ion-item>
+  </ion-list>
+
+  <h3>Lista com Avatar</h3>
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <ion-img
+          src="https://occ-0-1723-92.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABceL_FxRrEg1Jm2LyiYugCJwBkJ2v4GmCBWQ_JNLBXCu1tpO1CMoOxGk9R74PCzrCR0FLIrjdgZlyIHnZEuiHArY6C9G.jpg?r=a82"
+        ></ion-img
+      ></ion-avatar>
+      <ion-label>
+        <h2>Nome do Contato</h2>
+        <h3>Descrição do Contato</h3>
+        <p>Detalhes do Contato</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="block" color="danger" (click)="showPageHome()"
+    >Ir para home</ion-button
+  >
+</ion-content>

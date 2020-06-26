@@ -1,0 +1,165 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Grid</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3>Grid 12 colunas</h3>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        Col 1
+      </ion-col>
+      <ion-col>
+        Col 2
+      </ion-col>
+      <ion-col>
+        Col 3
+      </ion-col>
+      <ion-col>
+        Col 4
+      </ion-col>
+      <ion-col>
+        Col 5
+      </ion-col>
+      <ion-col>
+        Col 6
+      </ion-col>
+      <ion-col>
+        Col 7
+      </ion-col>
+      <ion-col>
+        Col 8
+      </ion-col>
+      <ion-col>
+        Col 9
+      </ion-col>
+      <ion-col>
+        Col 10
+      </ion-col>
+      <ion-col>
+        Col 11
+      </ion-col>
+      <ion-col>
+        Col 12
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h3>Variando tamanho</h3>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        Col 1
+      </ion-col>
+      <ion-col>
+        Col 2
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        Col 1
+      </ion-col>
+      <ion-col>
+        Col 2
+      </ion-col>
+      <ion-col>
+        Col 3
+      </ion-col>
+      <ion-col>
+        Col 4
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h3>Pulando colunas para direita</h3>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="3">
+        Col 1
+      </ion-col>
+      <ion-col size="3" offset="3">
+        Col 2
+      </ion-col>
+      <ion-col size="3">
+        Col 3
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h3>Alinhamento</h3>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-align-self-start"><div>1 of 4</div></ion-col>
+      <ion-col class="ion-align-self-center"> <div>2 of 4</div> </ion-col>
+      <ion-col class="ion-align-self-end"> <div>3 of 4</div> </ion-col>
+      <ion-col>
+        <div>
+          4 of 4 <br />
+          # <br />
+          # <br />
+          #
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="ion-align-self-start"><div>1 of 4</div></ion-col>
+      <ion-col class="ion-align-self-start"> <div>2 of 4</div> </ion-col>
+      <ion-col class="ion-align-self-start"> <div>3 of 4</div> </ion-col>
+      <ion-col>
+        <div>
+          4 of 4 <br />
+          # <br />
+          # <br />
+          #
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="ion-align-self-center"><div>1 of 4</div></ion-col>
+      <ion-col class="ion-align-self-center"> <div>2 of 4</div> </ion-col>
+      <ion-col class="ion-align-self-center"> <div>3 of 4</div> </ion-col>
+      <ion-col>
+        <div>
+          4 of 4 <br />
+          # <br />
+          # <br />
+          #
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="ion-align-self-end"><div>1 of 4</div></ion-col>
+      <ion-col class="ion-align-self-end"> <div>2 of 4</div> </ion-col>
+      <ion-col class="ion-align-self-end"> <div>3 of 4</div> </ion-col>
+      <ion-col>
+        <div>
+          4 of 4 <br />
+          # <br />
+          # <br />
+          #
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h3>Responsivo</h3>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-sm="12" size-md="6" size-lg="4" size-xl="3" size-xs="12">
+        1 of 4
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-button expand="block" color="danger" (click)="showPageHome()"
+    >Ir para home</ion-button
+  >
+</ion-content>

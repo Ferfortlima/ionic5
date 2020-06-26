@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Infinite Scroll</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button expand="block" color="danger" (click)="showPageHome()"
+    >Ir para home</ion-button
+  >
+  <h3>Lista infinita:</h3>
+  <ion-list>
+    <ion-item *ngFor="let numero of this.numeros | slice:0:limit">
+      <ion-label color="secondary">{{numero}}</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-infinite-scroll (ionInfinite)="this.popularScrollInifinito($event)">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

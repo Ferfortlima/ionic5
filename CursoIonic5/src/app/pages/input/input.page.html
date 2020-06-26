@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Input</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Input default -->
+  <ion-input></ion-input>
+
+  <!-- Input com valor -->
+  <ion-input value="1234"></ion-input>
+
+  <!-- Input com placeholder -->
+  <ion-input type="text" placeholder="Informe um texto"></ion-input>
+
+  <!-- Input com icone de limpar -->
+  <ion-input clearInput value="Com ícone de limpar"></ion-input>
+
+  <!-- Input com numero -->
+  <ion-input type="number" placeholder="Informe numeros"></ion-input>
+
+  <!-- Input com email -->
+  <ion-input type="email" placeholder="Informe um email"></ion-input>
+
+  <!-- Input com telefone -->
+  <ion-input type="tel" placeholder="Informe um telefone"></ion-input>
+
+  <!-- Input com url -->
+  <ion-input type="url" placeholder="Informe url"></ion-input>
+
+  <!-- Input com search -->
+  <ion-input type="search" placeholder="Search"></ion-input>
+
+  <!-- Input com password -->
+  <ion-input type="password" placeholder="Informe password"></ion-input>
+
+  <ion-item>
+    <ion-label>Sem posição</ion-label>
+    <ion-input type="text" placeholder="Informe um texto"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Floating</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="fixed">Fixed</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Data de Nascimento</ion-label>
+    <ion-input type="text" placeholder="DD/MM/AAAA"></ion-input>
+  </ion-item>
+
+  <!-- Input com color -->
+  <ion-input
+    type="text"
+    color="danger"
+    placeholder="Informe um texto"
+  ></ion-input>
+
+  <ion-button expand="block" color="danger" (click)="showPageHome()"
+    >Ir para home</ion-button
+  >
+</ion-content>
