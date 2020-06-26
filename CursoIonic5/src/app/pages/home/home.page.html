@@ -8,85 +8,11 @@
 </ion-header>
 
 <ion-content>
-  <ion-button expand="full" color="primary" (click)="goToPage('navegacao')"
-    >Navegação</ion-button
-  >
-  <ion-button expand="full" color="secondary" (click)="goToPage('botoes')"
-    >Botões</ion-button
-  >
-  <ion-button expand="full" color="tertiary" (click)="goToPage('alert')"
-    >Alerta</ion-button
-  >
-  <ion-button expand="full" color="success" (click)="goToPage('actionsheet')"
-    >Action-Sheet</ion-button
-  >
-  <ion-button expand="full" color="warning" (click)="goToPage('badge')"
-    >Badges</ion-button
-  >
-  <ion-button expand="full" color="danger" (click)="goToPage('card')"
-    >Cards</ion-button
-  >
-  <ion-button expand="full" color="light" (click)="goToPage('checkbox')"
-    >Checkbox</ion-button
-  >
-  <ion-button expand="full" color="medium" (click)="goToPage('chip')"
-    >Chip</ion-button
-  >
-  <ion-button expand="full" color="dark" (click)="goToPage('content')"
-    >Content</ion-button
-  >
-  <ion-button expand="full" color="primary" (click)="goToPage('datetime')"
-    >DateTime</ion-button
-  >
-  <ion-button expand="full" color="secondary" (click)="goToPage('fab')"
-    >FAB</ion-button
-  >
-  <ion-button expand="full" color="tertiary" (click)="goToPage('grid')"
-    >Grid</ion-button
-  >
-  <ion-button expand="full" color="success" (click)="goToPage('infinitescroll')"
-    >Infinite Scroll</ion-button
-  >
-  <ion-button expand="full" color="warning" (click)="goToPage('input')"
-    >Input</ion-button
-  >
-  <ion-button expand="full" color="danger" (click)="goToPage('list')"
-    >List</ion-button
-  >
-  <ion-button expand="full" color="light" (click)="goToPage('progressbar')"
-    >Progress Bar</ion-button
-  >
-  <ion-button expand="full" color="medium" (click)="goToPage('refresher')"
-    >Refresher</ion-button
-  >
-  <ion-button expand="full" color="dark" (click)="goToPage('reorder')"
-    >Re-order</ion-button
-  >
-  <ion-button expand="full" color="primary" (click)="goToPage('select')"
-    >Select</ion-button
-  >
-  <ion-button expand="full" color="secondary" (click)="goToPage('toggle')"
-    >Toggle</ion-button
-  >
-  <ion-button expand="full" color="tertiary" (click)="goToPage('searchbar')"
-    >SeachBar</ion-button
-  >
-  <ion-button expand="full" color="success" (click)="goToPage('segment')"
-    >Segment</ion-button
-  >
-  <ion-button expand="full" color="warning" (click)="goToPage('slides')"
-    >Slides</ion-button
-  >
-  <ion-button expand="full" color="danger" (click)="goToPage('toast')"
-    >Toast</ion-button
-  >
-  <ion-button expand="full" color="light" (click)="goToPage('modal')"
-    >Modal</ion-button
-  >
-  <ion-button expand="full" color="medium" (click)="goToPage('popover')"
-    >Pop-Over</ion-button
-  >
-  <ion-button expand="full" color="dark" (click)="goToPage('radio')"
-    >Radio</ion-button
+  <ion-button
+    *ngFor="let page of this.appPages"
+    expand="full"
+    color="dark"
+    (click)="goToPage(page.url)"
+    >{{page.title}}</ion-button
   >
 </ion-content>

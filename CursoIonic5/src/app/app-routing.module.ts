@@ -125,6 +125,14 @@ const routes: Routes = [
     path: 'radio',
     loadChildren: () => import('./pages/radio/radio.module').then( m => m.RadioPageModule)
   },
+  {
+    path: 'animacao',
+    loadChildren: () => import('./pages/animacao/animacao.module').then( m => m.AnimacaoPageModule)
+  },
+  {
+    path: 'nativos',
+    loadChildren: () => import('./pages/nativos/nativos.module').then( m => m.NativosPageModule)
+  },
 ];
 
 @NgModule({
