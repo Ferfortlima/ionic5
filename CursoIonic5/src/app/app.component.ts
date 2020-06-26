@@ -127,6 +127,31 @@ export class AppComponent implements OnInit {
       url: "/segment",
       icon: "construct",
     },
+    {
+      title: "Slides",
+      url: "/slides",
+      icon: "construct",
+    },
+    {
+      title: "Toast",
+      url: "/toast",
+      icon: "construct",
+    },
+    {
+      title: "Modal",
+      url: "/modal",
+      icon: "construct",
+    },
+    {
+      title: "PopOver",
+      url: "/popover",
+      icon: "construct",
+    },
+    {
+      title: "Radio",
+      url: "/radio",
+      icon: "construct",
+    },
   ];
 
   constructor(

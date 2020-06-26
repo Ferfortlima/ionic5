@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Slides</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-content>
+    <ion-slides pager="true">
+      <ion-slide>
+        <ion-img
+          src="https://segredosdomundo.r7.com/wp-content/uploads/2019/02/existe-vulcao-no-brasil-tudo-o-que-voce-precisa-saber-sobre-isso-1.jpg"
+        ></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img
+          src="https://www.todoestudo.com.br/wp-content/uploads/2017/06/montanha.jpg"
+        ></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img
+          src="https://gooutside-static-cdn.akamaized.net/wp-content/uploads/sites/3/2019/04/microplasticos-transportados-pelo-ar-ja-chegaram-em-montanhas-intocaveis.jpg"
+        ></ion-img>
+      </ion-slide>
+    </ion-slides>
+  </ion-content>
+  <ion-button expand="block" color="danger" (click)="showPageHome()"
+    >Ir para home</ion-button
+  >
+</ion-content>
