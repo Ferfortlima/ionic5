@@ -1,9 +1,7 @@
-import { GET } from "./../../actions/categoryAction";
 import { CategoryService } from "./../../service/category/category.service";
 import { Component, OnInit } from "@angular/core";
 import { Observable } from "rxjs";
 import { Store, select } from "@ngrx/store";
-import { CategoryModel } from "src/app/models/categoryModel";
 import { Category } from "src/app/models/category";
 
 @Component({

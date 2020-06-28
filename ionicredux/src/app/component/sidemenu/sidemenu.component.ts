@@ -11,7 +11,12 @@ export class SidemenuComponent implements OnInit {
     {
       title: "Categories",
       url: "/categories",
-      icon: "list",
+      icon: "apps",
+    },
+    {
+      title: "Country",
+      url: "/country",
+      icon: "airplane",
     },
   ];
 

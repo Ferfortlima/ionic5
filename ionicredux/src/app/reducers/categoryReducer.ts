@@ -6,9 +6,6 @@ export const initialState = [];
 
 export function categoryReducer(state = initialState, action: ActionModel) {
   switch (action.type) {
-    case ActionTypes.GET: {
-      return state;
-    }
     case ActionTypes.SET: {
       return action.payload.categories;
     }

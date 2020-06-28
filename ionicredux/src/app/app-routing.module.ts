@@ -14,6 +14,10 @@ const routes: Routes = [
         (m) => m.CategoriesPageModule
       ),
   },
+  {
+    path: 'country',
+    loadChildren: () => import('./pages/country/country.module').then( m => m.CountryPageModule)
+  },
 ];
 
 @NgModule({

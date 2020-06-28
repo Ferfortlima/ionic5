@@ -13,6 +13,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { SidemenuComponent } from "./component/sidemenu/sidemenu.component";
 import { StoreModule } from "@ngrx/store";
 import { categoryReducer } from "./reducers/categoryReducer";
+import { countryReducer } from './reducers/countryReducer';
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,6 +26,7 @@ import { categoryReducer } from "./reducers/categoryReducer";
     ComponentModule,
     StoreModule.forRoot({
       catMenu: categoryReducer,
+      country: countryReducer,
     }),
   ],
   providers: [
