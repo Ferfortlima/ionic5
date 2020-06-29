@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { MenuController } from "@ionic/angular";
 
 @Component({
   selector: "sidemenu",
@@ -20,7 +21,7 @@ export class SidemenuComponent implements OnInit {
     },
   ];
 
-  constructor() {}
+  constructor(private menu: MenuController) {}
 
   ngOnInit() {
     const path = window.location.pathname.split("/")[1];
@@ -28,6 +29,8 @@ export class SidemenuComponent implements OnInit {
       this.selectedIndex = this.appPages.findIndex(
         (page) => page.title.toLowerCase() === path.toLowerCase()
       );
+      // var titles = this.appPages.map((page) => page.title.toLowerCase());
+      // this.menu.enable(titles.includes(path));
     }
   }
 }

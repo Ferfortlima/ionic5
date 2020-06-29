@@ -11,6 +11,6 @@ export class FlagService {
   getFlag(country) {
     return this.http.get(
       `${URL.default.FLAGHOST + country + URL.default.FLAGFILTER}`
-    );
+    ).toPromise();
   }
 }

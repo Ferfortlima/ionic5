@@ -1,8 +1,6 @@
 import { ActionModel } from "../models/actionModel";
 
 import { ActionTypes } from "../actions/countryAction";
-import { Country } from "../models/country";
-import { FlagService } from "../service/flag/flag.service";
 
 export const initialState = [];
 

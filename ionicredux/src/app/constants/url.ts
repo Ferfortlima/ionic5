@@ -6,4 +6,6 @@ export default {
   COUNTRY: "?a=list",
   FLAGHOST: "https://restcountries.eu/rest/v2/demonym/",
   FLAGFILTER: "?fullText=true&fields=flag",
+  FILTER: "/filter.php?",
+  MEALDETAIL: "/lookup.php?i=",
 };

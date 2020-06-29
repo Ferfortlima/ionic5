@@ -14,7 +14,10 @@
         style="max-width: fit-content;"
         *ngFor="let item of this.country$ |async"
       >
-        <ion-card style="width: 300px; height: 250px;">
+        <ion-card
+          style="width: 300px; height: 250px;"
+          (click)="goToMeals('a',item.strArea)"
+        >
           <ion-card-header>{{item.strArea}}</ion-card-header>
           <ion-card-content
             style="

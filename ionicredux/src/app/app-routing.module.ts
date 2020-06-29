@@ -15,8 +15,14 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'country',
-    loadChildren: () => import('./pages/country/country.module').then( m => m.CountryPageModule)
+    path: "country",
+    loadChildren: () =>
+      import("./pages/country/country.module").then((m) => m.CountryPageModule),
+  },
+  {
+    path: "meals/:filter/:value",
+    loadChildren: () =>
+      import("./pages/meals/meals.module").then((m) => m.MealsPageModule),
   },
 ];
 
