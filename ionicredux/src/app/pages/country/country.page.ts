@@ -24,9 +24,9 @@ export class CountryPage implements OnInit {
     this.country$ = store.pipe(select("country"));
   }
 
-  goToMeals(filter, value) {
-    this.navCtrl.navigateForward("meals/" + filter + "/" + value);
-  }
+  goToMeals = (value) => {
+    this.navCtrl.navigateForward("meals/a" + "/" + value);
+  };
 
   ngOnInit() {
     this.categoryService.getAllCountries().then((data) => {

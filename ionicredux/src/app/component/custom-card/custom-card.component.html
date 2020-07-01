@@ -1,0 +1,13 @@
+<ion-card style="width: 300px; height: 250px;" (click)="customFuncHandler(this.title)">
+  <ion-card-header>{{ this.title }}</ion-card-header>
+  <ion-card-content
+    style="
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+    "
+    ><ion-img style="width: 200px;" [src]="this.img"></ion-img
+  ></ion-card-content>
+</ion-card>

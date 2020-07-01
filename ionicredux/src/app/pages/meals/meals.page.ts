@@ -13,9 +13,15 @@ export class MealsPage implements OnInit {
   pageTitle = "";
   meals: Meal[] = [];
   constructor(
+    private navCtrl: NavController,
     private route: ActivatedRoute,
     private mealService: MealService
   ) {}
+
+  showMealDetail = (mealName) => {
+    var meal = this.meals.find((meal) => meal.strMeal === mealName);
+    this.navCtrl.navigateForward("meal-detail/" + mealName + "/" + meal.idMeal);
+  };
 
   ngOnInit() {
     this.route.params.subscribe((param) => {

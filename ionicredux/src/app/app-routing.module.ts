@@ -24,6 +24,18 @@ const routes: Routes = [
     loadChildren: () =>
       import("./pages/meals/meals.module").then((m) => m.MealsPageModule),
   },
+  {
+    path: "meal-detail/:nameMeal/:idMeal",
+    loadChildren: () =>
+      import("./pages/meal-detail/meal-detail.module").then(
+        (m) => m.MealDetailPageModule
+      ),
+  },
+  {
+    path: "menu",
+    loadChildren: () =>
+      import("./pages/menu/menu.module").then((m) => m.MenuPageModule),
+  },
 ];
 
 @NgModule({

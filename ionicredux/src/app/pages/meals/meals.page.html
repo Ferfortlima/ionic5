@@ -11,16 +11,11 @@
   <ion-grid>
     <ion-row style="justify-content: center;">
       <ion-col style="max-width: fit-content;" *ngFor="let item of this.meals">
-        <ion-card style="width: 300px;">
-          <ion-card-header>{{item.strMeal}}</ion-card-header>
-          <ion-card-content
-            style="display: flex; justify-content: center; align-items: center;"
-            ><ion-img
-              style="width: 100%; height: 100%;"
-              [src]="item.strMealThumb"
-            ></ion-img
-          ></ion-card-content>
-        </ion-card>
+        <custom-card
+          [customFunc]="this.showMealDetail"
+          [title]="item.strMeal"
+          [img]="item.strMealThumb"
+        ></custom-card>
       </ion-col>
     </ion-row>
   </ion-grid>

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{this.nameMeal}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <div>
+      <ion-img [src]="this.meal.strMealThumb"></ion-img>
+    </div>
+    <div>
+      <div><ion-label>{{this.meal.strArea}}</ion-label></div>
+      <div><ion-img [src]="this.flag"></ion-img></div>
+    </div>
+  </div>
+  <ion-label>{{this.meal.strMeal}}</ion-label>
+</ion-content>

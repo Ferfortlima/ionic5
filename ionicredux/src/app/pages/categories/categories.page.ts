@@ -22,9 +22,9 @@ export class CategoriesPage implements OnInit {
     this.cat$ = store.pipe(select("catMenu"));
   }
 
-  goToMeals(filter, value) {
-    this.navCtrl.navigateForward("meals/" + filter + "/" + value);
-  }
+  goToMeals = (value) => {
+    this.navCtrl.navigateForward("meals/c" + "/" + value);
+  };
 
   ngOnInit() {
     this.categoryService

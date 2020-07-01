@@ -13,4 +13,10 @@ export class MealService {
       .get(`${URL.default.HOST + URL.default.FILTER + filter}=${value}`)
       .toPromise();
   }
+
+  getMealDetails(idMeal) {
+    return this.http
+      .get(`${URL.default.HOST + URL.default.MEALDETAIL + idMeal}`)
+      .toPromise();
+  }
 }
